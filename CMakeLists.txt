@@ -1,8 +1,13 @@
 project(HelloWorld)
 cmake_minimum_required(VERSION 3.0)
 
-add_executable(hello_world main.cpp)
-add_executable(hello_world_test test.cpp)
+add_executable(hello_world HelloWorld.cpp)
+
+add_executable(cpp_test test.cpp)
 
 enable_testing()
-add_test(NAME hello_world_test COMMAND hello_world_test) 
+
+add_test(
+  NAME cpp_test
+  COMMAND $<TARGET_FILE:cpp_test>
+)
