@@ -1,4 +1,4 @@
-# Build a "Hello World!" C++ program with CMake and test it with Ctest
+# Build a "Hello World!" C++ program with CMake and test it with CTest
 
 ## Steps to run locally:
 
