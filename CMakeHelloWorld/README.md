@@ -1,23 +1,23 @@
 # Build a "Hello World!" C++ program with CMake and test it with Ctest
 
-## Steps to run locally
+## Steps to run locally:
 
-### mkdir build
-'''
+### 1. mkdir build
+```
 mkdir build && cd build
-'''
+```
 
-### Run CMake
-'''
+### 2. Run CMake
+```
 cmake ..
-'''
+```
 
-### Build using CMake
-'''
+### 3. Build using CMake
+```
 cmake --build .
-'''
+```
 
-### Run CTests
-'''
+### 4. Run CTests
+```
 ctest
-'''
+```
