@@ -31,5 +31,8 @@
 *.out
 *.app
 
+# Visual Studio Code workspaces
+.vscode/*
+
 # Build Folders
 build/*
