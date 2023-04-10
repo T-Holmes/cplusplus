@@ -1,8 +1,9 @@
+#include "HelloWorld.h"
 #include <iostream>
-#include "Helloworld.h"
+
 int main ()
 {
-   std::cout << helloWorld() << std::endl;
-
-  return 0;
+    std::cout << helloWorld() << std::endl;
+    
+    return 0;
 }
