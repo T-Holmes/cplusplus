@@ -8,7 +8,7 @@
 ********************************************/
 
 #include <iostream>
-#include "HelloWorld.h"
+#include "../include/HelloWorld.h"
 
 /*******************************************************************************
 * Prints "Hello World!" 

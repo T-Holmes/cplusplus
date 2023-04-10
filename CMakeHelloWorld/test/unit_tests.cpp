@@ -8,7 +8,7 @@
 *************************************************************************/
 
 #include <assert.h>
-#include "HelloWorld.h"
+#include "../include/HelloWorld.h"
 
 /*******************************************************************************
 * Tests if HelloWorld library prints "Hello World!" correctly 

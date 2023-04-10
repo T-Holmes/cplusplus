@@ -18,17 +18,19 @@ project(HelloWorld)
 
 # Create a library for the HelloWorld class
 add_library(hello_world_lib
-    HelloWorld.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/HelloWorld.cpp
 )
 
 # Include directory for HelloWorld class
 target_include_directories(hello_world_lib
     PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 # Executable for hello world program
-add_executable(hello_world main.cpp)
+add_executable(hello_world 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+)
 
 # Link HelloWorld library
 target_link_libraries(hello_world
@@ -44,7 +46,9 @@ target_link_libraries(hello_world
 enable_testing()
 
 # Executable for unit test program
-add_executable(cpp_test unit_tests.cpp)
+add_executable(cpp_test 
+    ${CMAKE_CURRENT_SOURCE_DIR}/test/unit_tests.cpp
+)
 
 # Link HelloWorld library to unit test program
 target_link_libraries(cpp_test
